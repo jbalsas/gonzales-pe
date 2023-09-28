@@ -1952,7 +1952,8 @@ function checkIdent(i) {
     if (tokens[i].type !== TokenType.HyphenMinus &&
         tokens[i].type !== TokenType.LowLine &&
         tokens[i].type !== TokenType.Identifier &&
-        tokens[i].type !== TokenType.DecimalNumber) break;
+        tokens[i].type !== TokenType.DecimalNumber &&
+        tokens[i].type !== TokenType.FullStop) break;
   }
 
   tokens[start].ident_last = i - 1;
